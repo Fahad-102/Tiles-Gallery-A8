@@ -1,0 +1,148 @@
+
+
+[
+  {
+    "id": "tile_001",
+    "title": "Ocean Blue Ceramic",
+    "description": "Elegant blue ceramic tile with glossy finish",
+    "image": "/TilesImages/tiles01.jpg",
+    "category": "ceramic",
+    "price": 45.99,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_002",
+    "title": "Classic White Marble",
+    "description": "Premium white marble tile with subtle veins",
+    "image": "/TilesImages/tiles02.avif",
+    "category": "marble",
+    "price": 65.00,
+    "currency": "USD",
+    "dimensions": "80x80 cm",
+    "material": "Marble",
+    "inStock": true
+  },
+  {
+    "id": "tile_003",
+    "title": "Modern Grey Porcelain",
+    "description": "Minimalist grey porcelain tile for modern interiors",
+    "image": "/TilesImages/tiles03.jpg",
+    "category": "porcelain",
+    "price": 50.50,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Porcelain",
+    "inStock": true
+  },
+  {
+    "id": "tile_004",
+    "title": "Black Granite Stone",
+    "description": "Strong and durable black granite tile",
+    "image": "/TilesImages/tiles04.webp",
+    "category": "granite",
+    "price": 70.00,
+    "currency": "USD",
+    "dimensions": "100x100 cm",
+    "material": "Granite",
+    "inStock": false
+  },
+  {
+    "id": "tile_005",
+    "title": "Geometric Pattern Tile",
+    "description": "Stylish geometric design tile for modern homes",
+    "image": "/TilesImages/tiles05.webp",
+    "category": "decorative",
+    "price": 55.75,
+    "currency": "USD",
+    "dimensions": "50x50 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_006",
+    "title": "Wood Finish Tile",
+    "description": "Natural wood look tile with durability",
+    "image": "/TilesImages/tiles06.avif",
+    "category": "wood",
+    "price": 60.00,
+    "currency": "USD",
+    "dimensions": "120x20 cm",
+    "material": "Porcelain",
+    "inStock": true
+  },
+  {
+    "id": "tile_007",
+    "title": "Beige Stone Tile",
+    "description": "Warm beige stone tile for cozy interiors",
+    "image": "/TilesImages/tiles07.webp",
+    "category": "stone",
+    "price": 48.90,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Stone",
+    "inStock": true
+  },
+  {
+    "id": "tile_008",
+    "title": "Luxury Gold Pattern",
+    "description": "High-end golden patterned tile",
+    "image": "/TilesImages/tiles08.webp",
+    "category": "luxury",
+    "price": 85.00,
+    "currency": "USD",
+    "dimensions": "80x80 cm",
+    "material": "Marble",
+    "inStock": true
+  },
+  {
+    "id": "tile_009",
+    "title": "Matte Black Tile",
+    "description": "Elegant matte black tile for premium design",
+    "image": "/TilesImages/tiles09.jpg",
+    "category": "ceramic",
+    "price": 52.00,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": false
+  },
+  {
+    "id": "tile_010",
+    "title": "Blue Mosaic Tile",
+    "description": "Artistic blue mosaic tile for walls",
+    "image": "/TilesImages/tiles10.jpg",
+    "category": "mosaic",
+    "price": 40.00,
+    "currency": "USD",
+    "dimensions": "30x30 cm",
+    "material": "Glass",
+    "inStock": true
+  },
+  {
+    "id": "tile_011",
+    "title": "Rustic Brown Tile",
+    "description": "Vintage rustic brown tile for classic look",
+    "image": "/TilesImages/tiles11.png",
+    "category": "rustic",
+    "price": 47.50,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Ceramic",
+    "inStock": true
+  },
+  {
+    "id": "tile_012",
+    "title": "Minimal White Tile",
+    "description": "Clean and minimal white tile for modern spaces",
+    "image": "/TilesImages/tiles12.png",
+    "category": "minimal",
+    "price": 44.00,
+    "currency": "USD",
+    "dimensions": "60x60 cm",
+    "material": "Porcelain",
+    "inStock": true
+  }
+]
