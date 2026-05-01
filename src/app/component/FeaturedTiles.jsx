@@ -1,4 +1,6 @@
+import { Button } from "@heroui/react";
 import TilesCards from "./TilesCards";
+import Link from "next/link";
 
 const FeaturedTiles =async () => {
     const res = await fetch('http://localhost:3000/data.json')
@@ -12,7 +14,12 @@ const FeaturedTiles =async () => {
                 topTiles.map(tiles =><TilesCards key={tiles.id} tiles = {tiles}/>
                 )
                 }
-            </div>            
+            </div>     
+            <div className="flex justify-center items-center mt-5 mb-10 ">
+              <Link href={"/AllTiles"}>
+              <Button className="bg-amber-900">Show All Tiles</Button>
+              </Link>
+                    </div>       
         </div>
     );
 };

@@ -17,7 +17,7 @@ const Navbar = () => {
             style={{ width: 'auto', height: 'auto' }}
             className="object-cover h-auto w-auto border"
           />
-          <h3 className="font-black text-lg">Tiles Gallery</h3>
+          <h3 className="font-black text-2xl">Tiles Gallery</h3>
         </div>
 
         <ul className="flex items-center gap-5 text-lg">
@@ -25,13 +25,11 @@ const Navbar = () => {
             <Link className="hover:text-black text-amber-50 transition-colors" href={"/"}>Home</Link>
           </li>
           <li>
-            <Link className="hover:text-black text-amber-50 transition-colors" href={"/all-photos"}>All Photos</Link>
+            <Link className="hover:text-black text-amber-50 transition-colors" href={"/AllTiles"}>All Tiles</Link>
           </li>
+          
           <li>
-            <Link className="hover:text-black text-amber-50 transition-colors" href={"/pricing"}>Pricing</Link>
-          </li>
-          <li>
-            <Link className="hover:text-black text-amber-50 transition-colors" href={"/profile"}>Profile</Link>
+            <Link className="hover:text-black text-amber-50 transition-colors" href={"/profile"}> My Profile</Link>
           </li>
         </ul>
 

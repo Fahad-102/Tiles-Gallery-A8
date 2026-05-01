@@ -1,8 +1,9 @@
-import { Badge, Button, Card, Separator } from "@heroui/react";
+import { Badge, Button, Card, Chip, Separator } from "@heroui/react";
 import Image from "next/image";
+import Link from "next/link";
 
 const TilesCards = ({tiles}) => {
-    console.log(tiles)
+    
     return (
         
         <Card>
@@ -11,16 +12,21 @@ const TilesCards = ({tiles}) => {
             src={tiles.image}
             alt={tiles.title}
             fill
-            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover rounded-xl"
             />
+            <Chip className=" absolute bottom-0"><p>${tiles.dimensions}</p></Chip>
+
             </div>
             <div className="flex justify-between items-center">
-                <p>{tiles.title}</p>
+                <p className="font-semibold">{tiles.title}</p>
                 <Separator orientation="vertical"/>
                 <p>${tiles.price}</p>
-            </div>
+                            </div>
             <Badge className="mx-5 mt-3 px-2">{tiles.category}</Badge>
-            <Button className="w-full" variant="outline">Veiw Details</Button>
+            <Link href={"/tilesDetails"}>
+            <Button className="w-full bg-amber-900 text-white" variant="outline">Veiw Details</Button>
+            </Link>
         </Card>
     );
 };
