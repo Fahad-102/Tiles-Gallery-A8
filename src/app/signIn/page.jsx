@@ -1,25 +1,36 @@
 "use client"
 import { authClient } from "@/lib/auth-client";
 import {Check} from "@gravity-ui/icons";
-import {Button, Description, FieldError, Form, Input, Label, TextField} from "@heroui/react";
+import {Button, Card,  FieldError, Form, Input, Label, Separator, TextField} from "@heroui/react";
+import { GrGoogle } from "react-icons/gr";
 
 
 const SignInPage = () => {
-    const onSubmit = async (e)=>{
-        e.preventDefault()
-        const email = e.target.email.value
-        const password = e.target.password.value
 
-        
-const { data, error } = await authClient.signIn.email({
-        email, 
-        password,
+
+const handleGoogle = async () => {
+ await authClient.signIn.social({
+  provider: "google",
+});
+};
+
+  const onSubmit = async (e)=>{
+      e.preventDefault()
+      const email = e.target.email.value
+      const password = e.target.password.value
+  
+  const { data, error } = await authClient.signIn.email({
+    email, 
+    password,
         callbackURL:"/"
-    })
-    console.log(data,error)
+    });
+    console.log(data,error);
+
+
     }
     return (
-         <Form className="flex w-96 flex-col gap-4 mx-auto p-10" onSubmit={onSubmit} >
+      <Card className="border-2 w-lg mx-auto">
+<Form className="flex w-96 flex-col gap-4 mx-auto p-7" onSubmit={onSubmit} >
       <TextField
         isRequired
         name="email"
@@ -57,7 +68,7 @@ const { data, error } = await authClient.signIn.email({
         <Input placeholder="Enter your password" />
         <FieldError />
       </TextField>
-      <div className="flex gap-2">
+      <div className="flex justify-center gap-10 mt-5">
         <Button type="submit">
           <Check/>
           Submit
@@ -67,6 +78,16 @@ const { data, error } = await authClient.signIn.email({
         </Button>
       </div>
     </Form>
+    <div className="flex justify-center items-center gap-2">
+      <Separator className="w-20"/>
+    <p className="flex justify-center ">OR</p>
+      <Separator className="w-20"/>
+    </div>
+    <div>
+      <Button  className="w-full" variant="outline" onClick={ handleGoogle } > <GrGoogle/> Login With Google</Button>
+    </div>
+    </Card>
+    
     );
 };
 

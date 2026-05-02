@@ -2,7 +2,7 @@
 
 import { authClient } from "@/lib/auth-client";
 import {Check} from "@gravity-ui/icons";
-import {Button, Description, FieldError, Form, Input, Label, TextField} from "@heroui/react";
+import {Button, Card, Description, FieldError, Form, Input, Label, TextField} from "@heroui/react";
 import { useRouter } from "next/navigation";
 
 
@@ -31,6 +31,8 @@ const { data, error } = await authClient.signUp.email({
     }
     }
     return (
+      <Card>
+
          <Form className="flex w-96 flex-col gap-4 mx-auto p-10" onSubmit={onSubmit} >
       <TextField
         isRequired
@@ -99,6 +101,7 @@ const { data, error } = await authClient.signUp.email({
         </Button>
       </div>
     </Form>
+      </Card>
     );
 };
 
