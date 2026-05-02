@@ -5,8 +5,8 @@ import logo from "@/logo.jpg";
 
 const Navbar = () => {
   return (
-    <div className="border-b px-2 bg-amber-900">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
+    <div className="border-b px-2">
+      <nav className=" flex justify-between items-center py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Image
             src={logo}
@@ -20,26 +20,31 @@ const Navbar = () => {
           <h3 className="font-black text-2xl">Tiles Gallery</h3>
         </div>
 
-        <ul className="flex items-center gap-5 text-lg">
+        <ul className="flex justify-center items-center gap-5 text-lg">
           <li>
-            <Link className="hover:text-black text-amber-50 transition-colors" href={"/"}>Home</Link>
+            <Link className=" hover:text-amber-900 text-black 
+ transition-colors" href={"/"}>Home</Link>
           </li>
           <li>
-            <Link className="hover:text-black text-amber-50 transition-colors" href={"/AllTiles"}>All Tiles</Link>
+            <Link className=" hover:text-amber-900 text-black 
+ transition-colors" href={"/AllTiles"}>All Tiles</Link>
           </li>
           
           <li>
-            <Link className="hover:text-black text-amber-50 transition-colors" href={"/profile"}> My Profile</Link>
+            <Link className=" hover:text-amber-900 text-black 
+ transition-colors" href={"/profile"}> My Profile</Link>
           </li>
         </ul>
 
         <div className="flex gap-4">
           <ul className="flex items-center text-lg gap-5">
             <li>
-              <Link className="hover:text-black text-amber-50 transition-colors" href={"/signup"}>SignUp</Link>
+              <Link className=" hover:text-amber-900 text-black 
+ transition-colors" href={"/signup"}>SignUp</Link>
             </li>
             <li>
-              <Link className="hover:text-black text-amber-50 transition-colors" href={"/signin"}>SignIn</Link>
+              <Link className=" hover:text-amber-900 text-black 
+ transition-colors" href={"/signin"}>SignIn</Link>
             </li>
           </ul>
         </div>

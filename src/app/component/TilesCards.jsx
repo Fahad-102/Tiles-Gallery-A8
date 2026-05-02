@@ -13,7 +13,7 @@ const TilesCards = ({tiles}) => {
             alt={tiles.title}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            className="object-cover rounded-xl"
+            className="object-cover rounded-xl hover:scale-110"
             />
             <Chip className=" absolute bottom-0"><p>${tiles.dimensions}</p></Chip>
 
@@ -24,7 +24,7 @@ const TilesCards = ({tiles}) => {
                 <p>${tiles.price}</p>
                             </div>
             <Badge className="mx-5 mt-3 px-2">{tiles.category}</Badge>
-            <Link href={"/tilesDetails"}>
+            <Link  href={`/AllTiles/${tiles.id}`}>
             <Button className="w-full bg-amber-900 text-white" variant="outline">Veiw Details</Button>
             </Link>
         </Card>
