@@ -40,11 +40,11 @@ const Navbar = () => {
           <ul className="flex items-center text-lg gap-5">
             <li>
               <Link className=" hover:text-amber-900 text-black 
- transition-colors" href={"/signup"}>SignUp</Link>
+ transition-colors" href={"/signUp"}>SignUp</Link>
             </li>
             <li>
               <Link className=" hover:text-amber-900 text-black 
- transition-colors" href={"/signin"}>SignIn</Link>
+ transition-colors" href={"/signIn"}>SignIn</Link>
             </li>
           </ul>
         </div>

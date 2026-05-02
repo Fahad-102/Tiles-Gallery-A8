@@ -1,4 +1,4 @@
-import { Badge, Button, Card, Chip } from "@heroui/react";
+import { Button, Card, Chip } from "@heroui/react";
 import Image from "next/image";
 
 const DetailsPage = async ({ params }) => {
