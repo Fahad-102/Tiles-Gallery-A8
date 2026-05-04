@@ -1,7 +1,9 @@
 import TilesClient from "./TilesClient";
 
 const AllTilespage = async () => {
-  const res = await fetch("http://localhost:3000/data.json");
+   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data.json`, {
+    cache: "no-store",
+  });
   const AllTiles = await res.json();
 
   return (

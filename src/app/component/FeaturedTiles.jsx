@@ -3,7 +3,9 @@ import TilesCards from "./TilesCards";
 import Link from "next/link";
 
 const FeaturedTiles =async () => {
-    const res = await fetch('http://localhost:3000/data.json')
+     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data.json`, {
+    cache: "no-store",
+  });
     const tiles = await res.json()
     const topTiles = tiles.slice(0,4)
     return (
