@@ -6,9 +6,9 @@ const DetailsPage = async ({ params }) => {
 
     const res = await fetch("http://localhost:3000/data.json");
     const AllTiles = await res.json();
-    const tile = AllTiles.find(t => t.id === id);
+    const tile = AllTiles.find(tile => tile.id === id);
     
-    if (!tile) return <div>Not found</div>;
+    if (!tile) return (<div className="text-center text-red-500 font-bold">Tile Not found</div>);
     
     return (
         <Card className=" relative shadow-2xl m-10 max-w-6xl mx-auto">

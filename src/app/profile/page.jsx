@@ -1,6 +1,6 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
-import { Avatar, Button, Card } from "@heroui/react";
+import { Avatar, Card } from "@heroui/react";
 import { EditProfile } from "../component/EditProfile";
 
 const Profilepage = () => {
@@ -8,11 +8,10 @@ const Profilepage = () => {
   const user = userId.data?.user;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-100 to-gray-200 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-br from-gray-100 to-gray-200 ">
       
       <Card className="w-full max-w-md p-6 rounded-2xl shadow-xl border">
         
-        {/* Top Section */}
         <div className="flex flex-col items-center">
           <Avatar className="h-32 w-32 ring-4 ring-white shadow-lg">
             <Avatar.Image

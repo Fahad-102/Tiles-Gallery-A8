@@ -6,7 +6,6 @@ const FeaturedTiles =async () => {
     const res = await fetch('http://localhost:3000/data.json')
     const tiles = await res.json()
     const topTiles = tiles.slice(0,4)
-    console.log(topTiles)
     return (
         <div>
             <h1 className="text-5xl font-bold text-center mt-10 ">Featured Tiles</h1>
@@ -17,7 +16,7 @@ const FeaturedTiles =async () => {
             </div>     
             <div className="flex justify-center items-center mt-5 mb-10 ">
               <Link href={"/AllTiles"}>
-              <Button className="bg-amber-900">Show All Tiles</Button>
+              <Button className="bg-amber-950">Show All Tiles</Button>
               </Link>
                     </div>       
         </div>
