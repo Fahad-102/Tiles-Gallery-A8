@@ -14,7 +14,7 @@ const SignUpPage = () => {
         e.preventDefault()
         const name = e.target.name.value
         const email = e.target.email.value
-        const photo = e.target.email.value
+        const photo = e.target.photo.value
         const password = e.target.password.value
 
         
@@ -31,9 +31,9 @@ const { data, error } = await authClient.signUp.email({
     }
     }
     return (
-      <Card>
+      <Card className="max-w-100 mx-auto mt-10 mb-10">
 
-         <Form className="flex w-96 flex-col gap-4 mx-auto p-10" onSubmit={onSubmit} >
+         <Form className="flex flex-col gap-4 mx-auto p-8" onSubmit={onSubmit} >
       <TextField
         isRequired
         name="name"

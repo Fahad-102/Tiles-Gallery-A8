@@ -6,7 +6,7 @@ const MarqueePage = () => {
     <div className="mt-5 bg-amber-50 py-2">
       <Marquee pauseOnHover={true} speed={50}>
         <p className="font-bold text-xl text-amber-900 mx-6">
-          New Arrivals
+          New Arrivals [ Minimal White Tile ]
         </p>
         <p className="font-bold text-xl text-amber-900 mx-6">|</p>
 

@@ -6,7 +6,6 @@ const DetailsPage = async ({ params }) => {
 
     const res = await fetch("http://localhost:3000/data.json");
     const AllTiles = await res.json();
-
     const tile = AllTiles.find(t => t.id === id);
     
     if (!tile) return <div>Not found</div>;

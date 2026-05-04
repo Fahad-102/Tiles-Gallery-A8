@@ -29,7 +29,7 @@ const handleGoogle = async () => {
 
     }
     return (
-      <Card className="border-2 w-lg mx-auto">
+      <Card className="border-2 max-w-100 mx-auto mt-10 mb-10 ">
 <Form className="flex w-96 flex-col gap-4 mx-auto p-7" onSubmit={onSubmit} >
       <TextField
         isRequired
@@ -68,7 +68,7 @@ const handleGoogle = async () => {
         <Input placeholder="Enter your password" />
         <FieldError />
       </TextField>
-      <div className="flex justify-center gap-10 mt-5">
+      <div className="flex justify-center gap-7 mt-5">
         <Button type="submit">
           <Check/>
           Submit

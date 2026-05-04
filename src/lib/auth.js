@@ -3,18 +3,23 @@ dns.setServers(['8.8.8.8','8.8.4.4']);
 
 import { betterAuth } from "better-auth";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
-import clientPromise from "@/lib/mongodb"; // 👈 IMPORTANT
+import { MongoClient } from "mongodb";
 
-const db = (await clientPromise).db("Tiles-Gallery");
+const client = new MongoClient(process.env.MONGODB_URI);
+await client.connect();
+const db = client.db("TilesGallery");
 
 export const auth = betterAuth({
-  database: mongodbAdapter(db), // ❗ client remove
-  emailAndPassword: {
+  database: mongodbAdapter(db,{
+    client,
+  }),
+
+  emailAndPassword:{
     enabled: true,
   },
-   socialProviders: {
+  socialProviders: {
         google: { 
-            clientId: process.env.GOOGLE_CLIENT_ID , 
+            clientId: process.env.GOOGLE_CLIENT_ID, 
             clientSecret: process.env.GOOGLE_CLIENT_SECRET, 
         }, 
     },

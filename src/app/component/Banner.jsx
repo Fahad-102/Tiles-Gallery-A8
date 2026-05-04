@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Banner = () => {
   return (
-    <div className="bg-[url('https://images.unsplash.com/photo-1600585152220-90363fe7e115?q=80&w=2070&auto=format&fit=crop')] h-[70vh] w-full bg-cover bg-no-repeat bg-center flex items-center shadow-xl overflow-hidden mt-10">
+    <div  style={{ backgroundImage: "url('/TilesImages/tiles12.png')" }} className=" h-[70vh] w-full bg-cover bg-no-repeat bg-center flex items-center shadow-xl overflow-hidden mt-10">
       
       <div className="w-full h-full bg-linear-to-r from-black/80 via-black/50 to-transparent flex items-center">
         

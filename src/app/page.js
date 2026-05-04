@@ -5,8 +5,8 @@ import MarqueePage from "./component/MarqueePage";
 export default function Home() {
   return (
    <div className="max-w-7xl mx-auto">
-    <MarqueePage/>
     <Banner/>
+    <MarqueePage/>
     <FeaturedTiles/>
    </div>
   );
