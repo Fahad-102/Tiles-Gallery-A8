@@ -24,7 +24,7 @@ const TilesCards = ({tiles}) => {
                 <p>${tiles.price}</p>
                             </div>
             <Badge className="mx-5 mt-3 px-2">{tiles.category}</Badge>
-            <Link  href={`/AllTiles/${tiles.id}`}>
+            <Link  href={`/all-tiles/${tiles.id}`}>
             <Button className="w-full bg-amber-950 text-white" variant="outline">Veiw Details</Button>
             </Link>
         </Card>

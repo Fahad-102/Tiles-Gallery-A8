@@ -19,7 +19,7 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Link href="/AllTiles">
+            <Link href="/all-tiles">
               <Button 
                 size="lg"
                 className="bg-amber-500 hover:bg-amber-600 text-black font-bold px-8 shadow-lg"
@@ -28,7 +28,7 @@ const Banner = () => {
               </Button>
             </Link>
 
-            <Link href="/signIn">
+            <Link href="/">
               <Button 
                 size="lg"
                 variant="bordered" 

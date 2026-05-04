@@ -51,8 +51,8 @@ const Navbar = () => {
 
           <li>
             <Link
-              className={pathname === "/AllTiles" ? activeClass : ""}
-              href={"/AllTiles"}
+              className={pathname === "/all-tiles" ? activeClass : ""}
+              href={"/all-tiles"}
             >
               All Tiles
             </Link>
@@ -85,11 +85,11 @@ const Navbar = () => {
             </div>
           ) : (
             <div className="flex  gap-3">
-              <Link href={"/signUp"}>
+              <Link href={"/register"}>
                 <Button className="bg-amber-950 text-white">SignUp</Button>
               </Link>
 
-              <Link href={"/signIn"}>
+              <Link href={"/login"}>
                 <Button className="bg-amber-950 text-white">SignIn</Button>
               </Link>
             </div>
