@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Tiles Gallery
+A modern and responsive web application designed to showcase a curated gallery of high-quality tiles using the latest web technologies.
 
-## Getting Started
+Live URL: https://tiles-gallery-a8-psi.vercel.app
 
-First, run the development server:
+Purpose
+The primary purpose of this project is to provide a seamless and visually appealing interface for users to explore various tile designs and categories. It serves as a portfolio-style gallery built with performance and scalability in mind.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Key Features
+Dynamic Gallery: Displays a wide range of tiles with optimized loading.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Modern UI/UX: Built with a focus on clean design and smooth user interactions.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Responsive Design: Fully accessible across all devices (mobile, tablet, and desktop).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Fast Navigation: Leverages Next.js App Router for instant page transitions.
 
-## Learn More
+Tech Stack & NPM Packages Used
+This project utilizes the following technologies and packages:
 
-To learn more about Next.js, take a look at the following resources:
+Framework: Next.js (App Router)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Styling: Tailwind CSS
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+UI Components: HeroUI
 
-## Deploy on Vercel
+Authentication: BetterAuth
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Database: MongoDB
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Programming Language: JavaScript
