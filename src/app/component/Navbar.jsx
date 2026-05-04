@@ -23,14 +23,20 @@ const Navbar = () => {
   };
 
   const activeClass =
-  "border-b-2 border-amber-950 text-amber-950 font-semibold px-2 py-1 transition rounded-2xl";
+    "border-b-2 border-amber-950 text-amber-950 font-semibold px-2 py-1 transition rounded-2xl";
 
   return (
     <div className="border-b px-2">
       <nav className="flex flex-wrap md:flex-nowrap justify-between items-center py-3 max-w-7xl mx-auto w-full">
 
         <Link href={"/"} className="flex items-center gap-2">
-          <Image src={logo} alt="logo" width={50} height={50} />
+          <Image
+            src={logo}
+            alt="logo"
+            width={50}
+            height={50}
+            priority
+          />
           <h3 className="font-black text-xl md:text-2xl">Tiles Gallery</h3>
         </Link>
 
@@ -38,13 +44,13 @@ const Navbar = () => {
           ☰
         </button>
 
-        <ul className={`w-full md:w-auto md:flex gap-5 text-lg items-center ${open ? "flex flex-col mt-3" : "hidden md:flex"}`}>
-
+        <ul
+          className={`w-full md:w-auto md:flex gap-5 text-lg items-center ${
+            open ? "flex flex-col mt-3" : "hidden md:flex"
+          }`}
+        >
           <li>
-            <Link
-              className={pathname === "/" ? activeClass : ""}
-              href={"/"}
-            >
+            <Link className={pathname === "/" ? activeClass : ""} href={"/"}>
               Home
             </Link>
           </li>
@@ -68,8 +74,11 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className={`w-full md:w-auto mt-3 md:mt-0 flex items-center gap-4 ${open ? "flex gap-10 justify-around " : "hidden md:flex"}`}>
-
+        <div
+          className={`w-full md:w-auto mt-3 md:mt-0 flex items-center gap-4 ${
+            open ? "flex gap-10 justify-around " : "hidden md:flex"
+          }`}
+        >
           {user ? (
             <div className="flex items-center gap-4">
               <p className="font-bold text-amber-950">{user?.name}</p>
@@ -79,12 +88,16 @@ const Navbar = () => {
                 <Avatar.Fallback>{user?.name?.charAt(0)}</Avatar.Fallback>
               </Avatar>
 
-              <Button className="font-bold" onClick={handleUserSignOut} variant="danger">
+              <Button
+                className="font-bold"
+                onClick={handleUserSignOut}
+                variant="danger"
+              >
                 SignOut
               </Button>
             </div>
           ) : (
-            <div className="flex  gap-3">
+            <div className="flex gap-3">
               <Link href={"/register"}>
                 <Button className="bg-amber-950 text-white">SignUp</Button>
               </Link>
@@ -94,7 +107,6 @@ const Navbar = () => {
               </Link>
             </div>
           )}
-
         </div>
       </nav>
     </div>
