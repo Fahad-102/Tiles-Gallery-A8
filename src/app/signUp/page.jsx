@@ -4,6 +4,7 @@ import { authClient } from "@/lib/auth-client";
 import {Check} from "@gravity-ui/icons";
 import {Button, Card, Description, FieldError, Form, Input, Label, TextField} from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { toast } from "react-toastify";
 
 
 const SignUpPage = () => {
@@ -14,7 +15,7 @@ const SignUpPage = () => {
         e.preventDefault()
         const name = e.target.name.value
         const email = e.target.email.value
-        const photo = e.target.photo.value
+        const image = e.target.image.value
         const password = e.target.password.value
 
         
@@ -22,13 +23,17 @@ const { data, error } = await authClient.signUp.email({
         email, 
         password, 
         name,
-        photo 
+        image 
     })
     console.log(data,error)
-
+if (error) {
+  toast.error("Signup failed ");
+  return;
+}
     if(!error){
       router.push("/signIn")
     }
+    toast.success("SignUp Successfull");
     }
     return (
       <Card className="max-w-100 mx-auto mt-10 mb-10">
@@ -46,7 +51,7 @@ const { data, error } = await authClient.signUp.email({
 
       <TextField
         isRequired
-        name="photo"
+        name="image"
         type="text"
       >
         <Label>Photo Url</Label>

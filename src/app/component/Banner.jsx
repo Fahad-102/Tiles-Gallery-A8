@@ -19,22 +19,22 @@ const Banner = () => {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Link href="/all-photos">
+            <Link href="/AllTiles">
               <Button 
                 size="lg"
                 className="bg-amber-500 hover:bg-amber-600 text-black font-bold px-8 shadow-lg"
               >
-                Explore Gallery
+                Browse Now
               </Button>
             </Link>
 
-            <Link href="/pricing">
+            <Link href="/signIn">
               <Button 
                 size="lg"
                 variant="bordered" 
                 className="text-white border-white hover:bg-white hover:text-black font-semibold px-8 backdrop-blur-sm shadow-sm"
               >
-                View Catalog
+                Join Us
               </Button>
             </Link>
           </div>
