@@ -17,7 +17,7 @@ const FeaturedTiles =async () => {
                 }
             </div>     
             <div className="flex justify-center items-center mt-5 mb-10 ">
-              <Link href={"/AllTiles"}>
+              <Link href={"/all-tiles"}>
               <Button className="bg-amber-950">Show All Tiles</Button>
               </Link>
                     </div>       
